@@ -5,6 +5,228 @@
     <link rel="stylesheet" href="styles.css" />
 
     <style>
+
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-image: url("https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with your hero image */
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav a {
+    color: white; /* Text color for links - adjust as needed */
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clear { /* Style for the "Clear" button */
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: flex-start; /* Align content to the right */
+    padding-left: 150px; /* Add some right padding */
+
+    position: relative; /* Needed for absolute positioning of social media icons */
+
+}
+
+
+/* social media */
+
+
+.social-media {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center */
+    display: flex;
+    flex-direction: column; /* Arrange icons vertically */
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adjust spacing between icons */
+    transition: color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.hero-content {
+    text-align: left; /* Align text to the left within the container */
+    max-width: 40%;  /* Adjust as needed */
+    margin-right: 50px; /* Add right margin */
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.title span {
+    display: block; /* Each word on a new line */
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.book-now {
+    padding: 15px 30px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* ... (Add more styles for main content, footer, etc.) */
+
+
+/* about page css */
+
+
+
+.about-hero {
+    background-image: url("https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    color: white;
+    position: relative; /* For overlay positioning */
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+
+.about-content {
+    text-align: center;
+    color: white;
+    max-width: 960px; /* Adjust as needed */
+    margin-bottom: 40px; /* Space between content and team */
+}
+
+.about-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.our-team {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.our-team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around; /* Distribute space around members */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px; /* Space between team members */
+}
+
       /* CSS for the popup */
       #searchResults {
         position: fixed; /* Stay in place */
