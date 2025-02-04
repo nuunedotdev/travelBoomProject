@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* CSS for the popup */
+      #searchResults {
+        position: fixed; /* Stay in place */
+        top: 20%; /* Adjust vertical position as needed */
+        right: 20px; /* Distance from the right edge */
+        width: 500px; /* Adjust width as needed */
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto; /* Add scrollbar if content overflows */
+        max-height: 60%; /* Set a maximum height */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        z-index: 1000; /* Ensure it's on top of other content */
+        display: none; /* Initially hidden */
+      }
+
+      #searchResults div {
+        /* Style individual results */
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee; /* Add a separator */
+        padding-bottom: 5px;
+      }
+
+      #searchResults img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">TravelBloom</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter a destination or keyword"
+          />
+          <button id="searchButton">Search</button>
+          <button class="clear" id="clearButton">Clear</button>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="hero-content">
+          <div class="title">
+            <span>EXPLORE</span>
+            <span>DREAM</span>
+            <span>DESTINATION</span>
+          </div>
+          <div class="description">
+            <p>
+              It encourages exploration of unfamiliar territories, embracing
+              diverse cultures and landscapes, while pursuing the desired
+              destination that captivates the heart and ignites a sense of
+              wonder.
+            </p>
+          </div>
+          <button class="book-now">BOOK NOW</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- <div id="searchResults" style="display: none"></div>
+        -->
+
+      <div id="searchResults"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="travel_rec.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3f7af3ae50.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
